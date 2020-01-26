@@ -336,6 +336,39 @@ namespace ConsoleTest1
         };
     }
 
+    public static class Example11
+    {
+        class Animal
+        {
+            /// <summary>
+            /// Let's deal with static initializer. static initializer is called only once when it's accessed at first time.
+            /// below is the static initializer.
+            /// </summary>
+            static Animal()
+            {
+                Console.WriteLine("WaHoo~");
+            }
+
+            public Animal()
+            {
+                Console.WriteLine("Animal created");
+            }
+
+            public static void Yawn()
+            {
+                Console.Write("Yawn!");
+            }
+        }
+        public static Action Act = () =>
+        {
+            //Animal.Yawn();
+            var a1 = new Animal();
+            var a2 = new Animal();
+            Animal.Yawn();
+        };
+    }
+
+
 
 
 
