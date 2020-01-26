@@ -237,12 +237,81 @@ namespace ConsoleTest1
     {
         public static Action Act = () =>
         {
+            //Dynamic Expansion
             dynamic info = new ExpandoObject();
             info.Id = 123;
             info.Another = 456;
 
+            Console.WriteLine(info.Another);
+
+            var s = TestDynamic();
+            Console.WriteLine(s);
+
+            //Console.WriteLine(info.Doesntexist);//Throws Error
+
+
+        };
+
+        public static dynamic TestDynamic()
+        {
+            return "dynamics are useful!";
+            //I think dynamic feature is not compatible with C#'s syntax. It uses a lot of 
+
+        }
+    }
+
+    public static class Example9
+    {
+
+        public class JSExpression
+        {
+            private readonly string expression;
+            public JSExpression(string rawExpression)
+            {
+                this.expression = rawExpression;
+            }
+            public override string ToString()
+            {
+                return this.expression;
+            }
+            public JSExpression IsEqualTo(JSExpression other)
+            {
+                return new JSExpression("(" + this + "==" + other + ")");
+            }
+
+            /// <summary>
+            /// Explicit type converter. int, double
+            /// </summary>
+            /// <param name="value"></param>
+            /*
+            public static explicit operator JSExpression(int value)
+            {
+                return new JSExpression(value.ToString());
+            }
+
+            public static explicit operator JSExpression(double value)
+            {
+                return new JSExpression(value.ToString());
+            }*/
+
+            public static implicit operator JSExpression(int value)
+            {
+                return new JSExpression(value.ToString());
+            }
+            public static implicit operator JSExpression(double value)
+            {
+                return new JSExpression(value.ToString());
+            }
+        }
+        public static Action Act = () =>
+        {
+            JSExpression intExpression = -1;//Why was the type converter defined explicitly? How about implicit converter?
+            JSExpression doubleExpression = -1.0;
+            Console.WriteLine(intExpression.IsEqualTo(doubleExpression));
+
         };
     }
+
 
 
 
