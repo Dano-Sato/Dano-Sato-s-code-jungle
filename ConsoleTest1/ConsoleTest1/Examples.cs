@@ -312,6 +312,31 @@ namespace ConsoleTest1
         };
     }
 
+    public static class Example10
+    {
+        public static Action Act = () =>
+        {
+            object value = "-1";
+            int? number = value as int?;//if you don't know that the value could be casted as other type, you could use 'as' operator.
+
+            if(number !=null)
+            {
+                Console.WriteLine(Math.Abs(number.Value));
+            }
+
+            Nullable<int> i = null;
+            //belows are the same expressions
+            //int? i = null;
+            //var i = (int?)null;
+
+            int j = i ?? 0;
+            //belows are the same expressions
+            //int j = i.GetValueOrDefault(0);
+            //int j = i.HasValue ? i.Value : 0;
+        };
+    }
+
+
 
 
 
