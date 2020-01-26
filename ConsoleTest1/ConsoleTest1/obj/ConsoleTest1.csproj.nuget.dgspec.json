@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\satodano\\source\\repos\\ConsoleTest1\\ConsoleTest1\\ConsoleTest1.csproj": {}
+    "\\\\Mac\\Home\\Documents\\CodeRepos\\ConsoleTest1\\ConsoleTest1\\ConsoleTest1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\satodano\\source\\repos\\ConsoleTest1\\ConsoleTest1\\ConsoleTest1.csproj": {
+    "\\\\Mac\\Home\\Documents\\CodeRepos\\ConsoleTest1\\ConsoleTest1\\ConsoleTest1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\satodano\\source\\repos\\ConsoleTest1\\ConsoleTest1\\ConsoleTest1.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\CodeRepos\\ConsoleTest1\\ConsoleTest1\\ConsoleTest1.csproj",
         "projectName": "ConsoleTest1",
-        "projectPath": "C:\\Users\\satodano\\source\\repos\\ConsoleTest1\\ConsoleTest1\\ConsoleTest1.csproj",
+        "projectPath": "\\\\Mac\\Home\\Documents\\CodeRepos\\ConsoleTest1\\ConsoleTest1\\ConsoleTest1.csproj",
         "packagesPath": "C:\\Users\\satodano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\satodano\\source\\repos\\ConsoleTest1\\ConsoleTest1\\obj\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\CodeRepos\\ConsoleTest1\\ConsoleTest1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\satodano\\AppData\\Roaming\\NuGet\\NuGet.Config",

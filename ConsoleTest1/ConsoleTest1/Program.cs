@@ -7,7 +7,7 @@ namespace ConsoleTest1
     {
         static void Main(string[] args)
         {
-            Example4.Act();
+            Example7.Act();
    
         }
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Numerics;
 using System.Text;
+using System.Dynamic;
 
 namespace ConsoleTest1
 {
@@ -199,6 +200,49 @@ namespace ConsoleTest1
         };
     }
 
+    /// <summary>
+    /// Implicit Type conversion. Maybe I would be able to use this style to make my own Point class.
+    /// </summary>
+    public static class Example7
+    {
+        public class Digit
+        {
+            public Digit(double d) { val=d; }
+            public double val;
+
+            public static implicit operator double(Digit d)
+            {
+                Console.WriteLine("Digit to double implicit conversion called");
+                return d.val;
+            }
+            public static implicit operator Digit(double d)
+            {
+                Console.WriteLine("double to Digit implicit conversion called");
+                return new Digit(d);
+            }
+        }
+        public static Action Act = () =>
+        {
+            Digit dig = new Digit(7);
+            double num = dig;
+            Digit dig2 = 12;
+            Console.WriteLine("num = {0} dig2 = {1}", num, dig2.val);
+            Console.ReadLine();
+        };
+    }
+    /// <summary>
+    ///  Example for C# Dynamic. 
+    /// </summary>
+    public static class Example8
+    {
+        public static Action Act = () =>
+        {
+            dynamic info = new ExpandoObject();
+            info.Id = 123;
+            info.Another = 456;
+
+        };
+    }
 
 
 

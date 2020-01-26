@@ -9,3 +9,14 @@ C:\Users\satodano\source\repos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1
 C:\Users\satodano\source\repos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1\ConsoleTest1.AssemblyInfo.cs
 C:\Users\satodano\source\repos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1\ConsoleTest1.dll
 C:\Users\satodano\source\repos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1\ConsoleTest1.pdb
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\bin\Debug\netcoreapp3.1\ConsoleTest1.exe
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\bin\Debug\netcoreapp3.1\ConsoleTest1.deps.json
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\bin\Debug\netcoreapp3.1\ConsoleTest1.runtimeconfig.json
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\bin\Debug\netcoreapp3.1\ConsoleTest1.runtimeconfig.dev.json
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\bin\Debug\netcoreapp3.1\ConsoleTest1.dll
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\bin\Debug\netcoreapp3.1\ConsoleTest1.pdb
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1\ConsoleTest1.csprojAssemblyReference.cache
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1\ConsoleTest1.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1\ConsoleTest1.AssemblyInfo.cs
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1\ConsoleTest1.dll
+\\Mac\Home\Documents\CodeRepos\ConsoleTest1\ConsoleTest1\obj\Debug\netcoreapp3.1\ConsoleTest1.pdb
