@@ -317,7 +317,8 @@ namespace ConsoleTest1
         public static Action Act = () =>
         {
             object value = "-1";
-            int? number = value as int?;//if you don't know that the value could be casted as other type, you could use 'as' operator.
+            int? number = value as int?;
+            //if you don't know that the value could be casted as other type, you could use 'as' operator.
 
             if(number !=null)
             {
@@ -343,6 +344,7 @@ namespace ConsoleTest1
             /// <summary>
             /// Let's deal with static initializer. static initializer is called only once when it's accessed at first time.
             /// below is the static initializer.
+            /// Singleton pattern exploits static initializer.
             /// </summary>
             static Animal()
             {
