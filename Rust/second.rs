@@ -176,5 +176,74 @@ fn main() {
         let num = Some(5);
         let unji= Some(String::from("Unji"));
         let k = Some(true);
+        let n:Option<u32> = None;
+        let n = Option::<u32>::None;
+        
+        println!("{:?}",num);
     }
+    {
+        enum Grade
+        {
+            A,
+            B,
+            C,
+            D,
+            F
+        }
+    
+        let me = Grade::D;
+        match me{
+            Grade::A=>println!("Wuhung"),
+            Grade::B=>println!("Nomuhyun"),
+            Grade::C=>println!("AngGimoti?"),
+            Grade::D=>println!("Rock of Owl"),
+            Grade::F=>println!("Unji")
+        }                   
+        match me{
+            Grade::A=>println!("Wuhung"),
+            _=> println!("Unji"),
+        }                   
+
+    }
+
+    {
+        fn plus_one(x:Option<i32>)->Option<i32>
+        {
+            match x
+            {
+                Some(i)=>Some(i+1),
+                None=>None
+            }
+        }
+
+        println!("{:?}",plus_one(Some(5)));
+    }
+
+    {
+        let pair = (2,-4);
+
+        match pair
+        {
+            (a,b) if a==b => println!("A"),
+            (a,b) if a+b==0 => println!("B"),
+            (a,_) if a==7 => println!("7"),
+            _=>println!("F")
+
+        }
+    }
+
+    {
+        fn age()->u32{
+            15
+        }
+        match age()
+        {
+            0=>println!("body"),
+            n@1..=12 =>println!("child"),
+            n@13..=19 => println!("teen of {}",n),
+            _=>println!("adult")
+        }
+
+    }
+
 }
