@@ -1,19 +1,32 @@
-fn main() {
-    //match with struct
-    //parsing the struct with match
-    {
-        struct Foo {
-            x: (u32, u32),
-            y: u32,
-        }
-        
-        let foo = Foo {x: (1,2), y:3};
-        match foo{
-            Foo {x: (1,b), y} => println!("First of x is 1, b = {}")
-            Foo { y:2, x:i} => println!("y is 2, i = {:?}", i);
-            Foo {y, ..} => println!("y ={}, we don't care about x",y);
-            
-        }
+use std::io;
+use std::cmp::Ordering;
+use rand::Rng;
 
+fn main() {
+    {
+ 
+        println!("Guess the number!");
+        println!("Please input your guess.");
+
+        let mut guess = String::new();
+        let secret_number = rand::thread_rng().gen_range(1,101);
+
+        println!("The secret number is: {}",secret_number);
+
+        io::stdin().read_line(&mut guess).expect("Failed to read line");
+        //.expect method take care of the error from Type: Result
+        //.expect unwraps the Type: Result
+
+        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+
+        println!("You guessed: {}", guess);    
+
+        match guess.cmp(&secret_number)
+        {
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Equal => println!("You win!"),
+
+        }
     }
 }
